@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_film">
+
+    <fragment
+        android:id="@+id/nav_film"
+        android:name="com.epul.appcerisaiekotlin.presentation.FilmFragment"
+        android:label="Film"
+        tools:layout="@layout/fragment_film">
+        <action
+            android:id="@+id/action_listFilm_to_film"
+            app:destination="@id/nav_unique_film" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_unique_film"
+        android:name="com.epul.appcerisaiekotlin.presentation.UniqueFilmFragment"
+        android:label="Film"
+        tools:layout="@layout/fragment_unique_film">
+        <action
+            android:id="@+id/action_film_to_listFilm"
+            app:destination="@id/nav_film" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_char"
+        android:name="com.epul.appcerisaiekotlin.presentation.CharacterFragment"
+        android:label="Personnages"
+        tools:layout="@layout/fragment_character">
+        <action
+            android:id="@+id/action_char_to_editChar"
+            app:destination="@id/nav_edit_char" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_char"
+        android:name="com.epul.appcerisaiekotlin.presentation.EditFramgent"
+        android:label="Edition personnages"
+        tools:layout="@layout/fragment_edit">
+        <action
+            android:id="@+id/action_editChar_to_char"
+            app:destination="@id/nav_char" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_actors"
+        android:name="com.epul.appcerisaiekotlin.presentation.ActorFragment"
+        android:label="Acteurs"
+        tools:layout="@layout/framgent_actors">
+        <action
+            android:id="@+id/action_acteur_to_perso"
+            app:destination="@id/nav_char" />
+        <action
+            android:id="@+id/action_acteur_to_film"
+            app:destination="@id/nav_film" />
+    </fragment>
+
+</navigation>

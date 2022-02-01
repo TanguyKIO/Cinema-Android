@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:layout_marginBottom="12dp"
+    android:paddingVertical="12dp">
+
+
+    <TextView
+        android:id="@+id/title_t"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:hint="Titre"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        android:hint="Titre"
+        app:layout_constraintStart_toEndOf="@id/title_t"
+        app:layout_constraintTop_toTopOf="@id/edit"
+        app:layout_constraintBottom_toBottomOf="@id/edit" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:hint="Titre"/>
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:text="Edit"
+        android:foreground="?attr/selectableItemBackground"
+        android:textColor="@color/black"
+        android:src="@drawable/ic_baseline_edit_24"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/suppr"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:tint="@android:color/holo_red_dark"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        android:foreground="?attr/selectableItemBackground"
+        android:visibility="invisible"
+        android:text="Supprimer"/>
+
+
+</LinearLayout>

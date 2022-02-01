@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/film_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numéro du film"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/film_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="26sp"
+        android:inputType="number"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/film_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/actor_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numéro de l'acteur"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/film_edit"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/actor_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="26sp"
+        android:inputType="number"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/actor_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/name_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom du personnage"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actor_edit"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="number"
+        android:padding="12dp"
+        android:layout_marginTop="26sp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:gravity="top"
+        app:layout_constraintTop_toBottomOf="@id/name_char"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:text="Valider"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@id/name_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

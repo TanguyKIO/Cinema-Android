@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:layout_marginBottom="12dp"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/nom_acteur"
+        android:layout_width="64dp"
+        android:layout_height="18dp"
+        android:hint="Titre"
+        android:textSize="14sp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/naissance"
+        android:layout_width="64dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:hint="Titre"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constrainedWidth="true" />
+
+    <TextView
+        android:id="@+id/characters"
+        android:layout_width="86dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
+        android:text="Personnages"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/movies"
+        android:layout_width="64dp"
+        android:layout_height="18dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Films"
+        android:foreground="?attr/selectableItemBackground" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:layout_marginBottom="12dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingVertical="12dp">
+
+
+    <TextView
+        android:id="@+id/title_film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Titre"
+        android:textColor="@color/black"
+        app:layout_constrainedWidth="true"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/date_sortie"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/date_sortie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:hint="Date de Sortie : "
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="@id/title_film"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
